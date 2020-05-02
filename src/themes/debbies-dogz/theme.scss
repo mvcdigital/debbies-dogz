@@ -1,0 +1,291 @@
+$enable-transitions: true;
+
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$headings-font-weight: 400;
+
+$body-bg: #fefefe;
+$body-color: #525759;
+
+$theme-colors: (
+  "primary": #ff6d22,
+  "secondary": #3cb6ce,
+  "grey": #525759,
+  "light-grey": #adb5bd
+);
+
+@import "bootstrap/scss/bootstrap";
+
+/* Typography */
+
+h2 {
+  font-family: 'Aleo', serif;
+}
+
+/* Navbar */
+
+.dd-navbar {  
+  // padding: 20px 16px 8px 16px;
+
+  .navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: escape-svg($navbar-light-toggler-icon-bg);
+  }
+
+  .nav-item {
+
+    .nav-link {
+      color: theme-color("grey");
+      text-transform: uppercase;
+
+      &:hover {
+        color: theme-color("secondary");
+      }
+    }
+
+    &.active .nav-link {
+      color: theme-color("primary");
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding-bottom: 0;
+  
+    .nav-item {
+
+      .nav-link {
+        padding: 8px 0 4px 50px;
+      }
+
+      &.active .nav-item-bar {
+        display: block;
+        height: 8px;
+        background: theme-color("primary");
+        margin-left: 50px;
+      }
+    }    
+  }
+}
+
+
+
+/* Jumbotron */
+
+.dd-jumbotron-home {
+  background: #ffffff url(/img/banner1@2x.png) no-repeat center;
+  background-size: cover;
+  text-align: center;
+
+  .container {
+    padding: 28px 0;
+    background-color: rgba(82,87,89,0.4);
+
+    h1 {
+      color: white;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .container {
+      border-radius: 0.5rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      border-radius: 0.5rem;
+      padding: 28px 90px;
+      max-width: 900px;
+
+      h1 {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+/* Buttons */
+
+.btn {
+  border: 0;
+  padding: 4px 20px;
+  margin: 0;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &.btn-lg {
+    padding: 5px 25px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: theme-color("secondary");
+  }
+}
+
+/* Cards */
+
+.card {
+  .card-icon {
+    background: url(/img/icon-daycare@2x.png) no-repeat center top;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .card-text {
+    // font-size: 20px;
+    // line-height: 24px;
+    color: theme-color("light-grey");
+  }
+}
+
+/* Services */
+
+.dd-services {
+  text-align: center;
+
+  .card {
+    border: 0;
+  }
+}
+
+/* Testimonials */
+
+.dd-testimonials {
+  background-color: theme-color("secondary");
+  color: white;
+  padding:35px 0 70px 0;
+
+  .container {
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+  }
+
+  h2 {
+    margin-bottom: 35px;
+  }
+
+  .speechmarks {
+    display: none;
+  }
+
+  .carousel-indicators {
+    bottom: -45px;
+
+    li {
+      width: 10px;
+      height: 10px;
+      background-clip: unset;
+      transition: none;
+      border: 1px solid white;
+      background: white;
+      opacity: 1;
+      border-radius: 10px;
+      margin: 0 6px;
+
+      &.active {
+        background-color: theme-color("primary");
+      };
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .speechmarks {
+      display: block;
+      width: 70px;
+      position: absolute;
+      top: -80px;
+      right: -80px;
+    }
+  }
+}
+
+/* Blog */
+
+.dd-blog {
+  h2 {
+    text-align: center;
+  }
+
+  .card {
+    border: 0;
+
+    .card-img-top {
+      height: 250px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+  
+    .dd-card-body-wrapper {
+      background-color: white;
+      border-radius: 10px;
+      margin-top: -50px;
+      padding: 10px;
+    }
+  
+    .dd-blog-date {
+      color: theme-color("light-grey");
+    }
+
+    .card-title {
+      color: theme-color("primary");
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .card {
+      .dd-card-body-wrapper {
+        margin-top: -60px;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+/* Footer */
+
+.dd-footer {
+  background: theme-color("grey");
+  color: white;
+  padding: 30px 0;
+
+  .dd-footer-social {
+    font-style: italic;
+  }
+
+  @media (min-width: 576px) {
+    .dd-footer-social {
+      text-align: right;
+    }
+  }
+}
+
+.dd-copyright {
+  background-color: theme-color("light-grey");  
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
