@@ -1,3 +1,5 @@
 baseURL = "https://debbiesdogz.co.uk/"
 languageCode = "en-gb"
 title = "Debbie's Dogz"
+theme = "debbies-dogz"
+relativeURLs = true
