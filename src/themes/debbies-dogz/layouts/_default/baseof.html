@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 {{- partial "head.html" . -}}
+
 <body>
     {{- partial "header.html" . -}}
     <div id="content">
@@ -8,5 +9,18 @@
     </div>
     {{- partial "footer.html" . -}}
     {{- partial "scripts.html" . -}}
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>
