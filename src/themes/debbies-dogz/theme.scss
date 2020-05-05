@@ -10,15 +10,24 @@ $theme-colors: (
   "primary": #ff6d22,
   "secondary": #3cb6ce,
   "grey": #525759,
-  "light-grey": #adb5bd
+  "light-grey": #adb5bd,
+  "light-blue": #ecf8fa
 );
 
 @import "bootstrap/scss/bootstrap";
 
+.bg-light-blue {
+  background-color: theme-color("light-blue");
+}
+
 /* Typography */
 
-h2 {
+h2, .h2 {
   font-family: 'Aleo', serif;
+}
+
+.text-light-grey {
+  color: theme-color("light-grey");
 }
 
 /* Navbar */
@@ -70,8 +79,6 @@ h2 {
     }    
   }
 }
-
-
 
 /* Jumbotron */
 
@@ -150,8 +157,6 @@ h2 {
   }
 
   .card-text {
-    // font-size: 20px;
-    // line-height: 24px;
     color: theme-color("light-grey");
   }
 }
@@ -170,6 +175,7 @@ h2 {
 
 .dd-testimonials {
   background-color: theme-color("secondary");
+  background-image: url(/img/paw-print.png);
   color: white;
   padding:35px 0 70px 0;
 
@@ -262,6 +268,22 @@ h2 {
         padding: 20px;
       }
     }
+  }
+}
+
+/* Lists */
+
+.dd-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 0 0 0 36px;
+    background: url(/img/bullet@2x.png) no-repeat left 4px;
+    background-size: 26px;
+    padding-bottom: 8px;
+    line-height: 30px;
   }
 }
 
