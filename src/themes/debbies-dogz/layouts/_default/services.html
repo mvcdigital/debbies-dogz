@@ -1,0 +1,104 @@
+{{ define "main" }}
+<div class="jumbotron dd-jumbotron jumbotron-fluid mb-4" style="background-image: url(/img/banner-about@2x.png)"></div>
+<div class="container text-center mb-4 dd-subtitle">
+  <h1 class="h2">{{ .Title }}</h1>
+  <p class="text-light-grey">{{ .Params.Subtitle }}</p>
+  <button type="button" class="btn btn-primary">Contact</button>
+</div>
+<div class="container mb-5">
+  <div class="card-deck mb-4">
+    <div class="card dd-card-service border-0 bg-light-blue">
+      <div class="card-body text-center">
+        <div class="card-icon mb-3" style="background-image: url(/img/icon-daycare@2x.png);"></div>
+        <h5 class="text-primary mb-0">Day Care</h5>
+        <p class="text-secondary">&pound;25.00 per dog per day</p>
+        <p>All dogs will receive a morning and afternoon walk (according to clients' requirements) and a lunchtime
+          snack (Kong or other enrichment toy as appropriate and as agreed with owner), in a relaxing home-from-home
+          environment. All dogs are collected and dropped off from their homes.</p>
+        <p class="font-italic">Minimum two walks per week or one daycare.</p>
+      </div>
+    </div>
+    <div class="card dd-card-service border-0 bg-light-blue">
+      <div class="card-body text-center">
+        <div class="card-icon mb-3" style="background-image: url(/img/icon-daycare@2x.png);"></div>
+        <h5 class="text-primary mb-0">Walking</h5>
+        <p class="text-secondary">&pound;12.50 per dog per walk</p>
+        <p>We try to incorporate training as FUN into our walks with games for recall and lots of find it games too.
+          Walking groups are carefully matched so all dogs are safe and comfortable with the other dogs in their group.
+          Any new dog will be slowly introduced to a group. Only two walking slots are offered a day, which are
+          purposefully not run on a timescale so all dogs get the chance to chill out, sniff, run and play on their
+          walks together. All Debbie's Dogz are supplied with a harness and identity tag for walks. All dogs are
+          collected and dropped off from their homes.</p>
+        <p class="font-italic">Minimum two walks per week or one daycare.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card dd-card-service border-0 bg-light-blue">
+      <div class="card-body text-center">
+        <div class="card-icon mb-3" style="background-image: url(/img/icon-daycare@2x.png);"></div>
+        <h5 class="text-primary mb-0">Boarding</h5>
+        <p class="text-secondary">&pound;XX.00 per dog per day</p>
+        <p>Boarding is offered to existing walking and day care clients. Dogs will receive two walks per day and relax
+          in a homefrom- home environment. Any dog spending over 7 nights boarding will also receive a professional bath
+          and brush with Becky at Woof and Go Dog Grooming prior to being returned home. A trial night or weekend will
+          be required at least one month prior to boarding dates.</p>
+      </div>
+    </div>
+    <div class="card dd-card-service border-0 bg-light-blue">
+      <div class="card-body text-center">
+        <div class="card-icon mb-3" style="background-image: url(/img/icon-daycare@2x.png);"></div>
+        <h5 class="text-primary mb-0">One-to-one Training</h5>
+        <p class="text-secondary">&pound;XX.00 per hour</p>
+        <p>With an extensive background in dog training, Debbie's Dogz also offers 121 training consultations, pre-puppy
+          advice and 121 puppy/dog training. All training is rewards-based, using positive reinforcement to encourage
+          good behaviour.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dd-testimonials">
+  <div class="container text-center">
+    <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
+    <h2 class="mb-4">What our clients say</h2>
+    <div id="testimonials" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+        <li data-target="#testimonials" data-slide-to="1"></li>
+        <li data-target="#testimonials" data-slide-to="2"></li>
+        <li data-target="#testimonials" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <p>"Debbie always puts the needs of individual dogs first, and especially makes sure they are
+            safe and looked after in bad weather – in hot & cold temperatures... her knowledge and
+            understanding of dogs is second to none. She works to build a good relationship with each of
+            the dogs in her care and they clearly respond to that..."</p>
+          <p>~ Cathy and Maisie the Labradoodle</p>
+        </div>
+        <div class="carousel-item">
+          <p>"Debbie always puts the needs of individual dogs first, and especially makes sure they are
+            safe and looked after in bad weather – in hot & cold temperatures... her knowledge and
+            understanding of dogs is second to none. She works to build a good relationship with each of
+            the dogs in her care and they clearly respond to that..."</p>
+          <p>~ Cathy and Maisie the Labradoodle</p>
+        </div>
+        <div class="carousel-item">
+          <p>"Debbie always puts the needs of individual dogs first, and especially makes sure they are
+            safe and looked after in bad weather – in hot & cold temperatures... her knowledge and
+            understanding of dogs is second to none. She works to build a good relationship with each of
+            the dogs in her care and they clearly respond to that..."</p>
+          <p>~ Cathy and Maisie the Labradoodle</p>
+        </div>
+        <div class="carousel-item">
+          <p>"Debbie always puts the needs of individual dogs first, and especially makes sure they are
+            safe and looked after in bad weather – in hot & cold temperatures... her knowledge and
+            understanding of dogs is second to none. She works to build a good relationship with each of
+            the dogs in her care and they clearly respond to that..."</p>
+          <p>~ Cathy and Maisie the Labradoodle</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
