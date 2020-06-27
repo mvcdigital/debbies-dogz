@@ -1,3 +1,10 @@
+{{ $homeCls := cond (eq .Section "") " active" "" }}
+{{ $servicesCls := cond (eq .Section "services") " active" "" }}
+{{ $aboutCls := cond (eq .Section "about") " active" "" }}
+{{ $testimonialsCls := cond (eq .Section "testimonials") " active" "" }}
+{{ $blogCls := cond (eq .Section "blog") " active" "" }}
+{{ $contactCls := cond (eq .Section "contact") " active" "" }}
+
 <div class="container">
   <nav class="navbar dd-navbar navbar-expand-lg">
       <a class="navbar-brand" href="#"></a>
@@ -8,27 +15,27 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item {{ $homeCls }}">
                   <a class="nav-link" href="/">Home</a>
                   <span class="nav-item-bar"></span>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ $servicesCls }}">
                   <a class="nav-link" href="/services">Services</a>
                   <span class="nav-item-bar"></span>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ $aboutCls }}">
                   <a class="nav-link" href="/about">About</a>
                   <span class="nav-item-bar"></span>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ $testimonialsCls }}">
                   <a class="nav-link" href="/testimonials">Testimonials</a>
                   <span class="nav-item-bar"></span>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ $blogCls }}">
                   <a class="nav-link" href="/blog">Blog</a>
                   <span class="nav-item-bar"></span>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ $contactCls }}">
                   <a class="nav-link" href="/contact">Contact</a>
                   <span class="nav-item-bar"></span>
               </li>
