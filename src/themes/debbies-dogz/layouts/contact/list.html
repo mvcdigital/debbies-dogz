@@ -1,10 +1,10 @@
 {{ define "main" }}
 <div class="jumbotron dd-jumbotron jumbotron-fluid mb-4" style="background-image: url(/img/banner-about@2x.png)"></div>
 <div class="container text-center mb-4">
-  <h1 class="h2">Contact</h1>
-  <p class="dd-subtitle text-light-grey">We'd love to hear from you. Please get in touch with your requirements.</p>
+  <h1 class="h2">{{ .Params.Title }}</h1>
+  <p class="dd-subtitle text-light-grey">{{ .Params.Subtitle }}</p>
 </div>
-<form class="dd-contact-form container mb-5">
+<form name="contact" action="/contact/thank-you" method="post" data-netlify="true" class="dd-contact-form container mb-5">
   <div class="form-group">
     <label for="name">Full name</label>
     <input type="text" class="form-control bg-light p-4" id="name">
