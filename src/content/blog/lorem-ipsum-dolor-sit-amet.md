@@ -2,8 +2,7 @@
 title: Lorem ipsum dolor sit amet
 date: 2020-07-02T19:44:01.711Z
 summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-  Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse
-  urna nibh, viverra non, semper suscipit, posuere a, pede.
+  Quisque volutpat mattis eros.
 image: /images/uploads/800x600-test.png
 ---
 <!--StartFragment-->
