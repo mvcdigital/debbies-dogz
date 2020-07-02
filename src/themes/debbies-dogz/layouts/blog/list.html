@@ -4,7 +4,7 @@
   <h1 class="h2">Blog</h1>
   <p class="text-light-grey dd-subtitle">Sharing thoughts and expertise.</p>
 </div>
-<div class="dd-blog container">
+<div class="dd-blog container mb-5">
     <div class="row">
         {{ range .Paginator.Pages }}
             <div class="col-md-6 col-lg-4">
@@ -22,7 +22,7 @@
         {{ end }}
     </div>
   {{ if gt .Paginator.TotalPages 1 }}
-    <div class="row mb-5">
+    <div class="row">
         <div class="col text-right">
             {{ if eq .Paginator.HasPrev true }}
                 <a href="{{ .Paginator.Prev.URL }}" class="btn btn-primary" style="width:125px;">Previous</a>
