@@ -23,6 +23,6 @@ collections:
         preview: false
       fields:
         - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Publish Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DDTHH:mm:ss' }
+        - { label: 'Publish Date', name: 'date', widget: 'datetime', pickerUtc: true }
         - { label: 'Summary', name: 'summary', widget: 'string' }
         - { label: 'Body', name: 'body', widget: 'markdown' }
