@@ -6,124 +6,34 @@
 </div>
 <div class="dd-blog container">
     <div class="row">
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">Valentine's for dogs</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
+        {{ range .Paginator.Pages }}
+            <div class="col-md-6 col-lg-4">
+                <a href="{{ .URL | relURL }}" class="card border-0">
+                    <div class="card-img-top" style="background-image: url({{ .Params.Image }});"></div>
+                    <div class="card-body">
+                        <div class="dd-card-body-wrapper">
+                            <div class="text-light-grey">{{ .Params.Date.Format "02.01.2006" }}</div>
+                            <div class="dd-card-title text-primary text-uppercase font-weight-bold">{{ .Title | markdownify }}</div>
+                            <div class="text-body mt-4">{{ .Summary | markdownify }}</div>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+        {{ end }}
+    </div>
+  {{ if gt .Paginator.TotalPages 1 }}
+    <div class="row mb-5">
+        <div class="col text-right">
+            {{ if eq .Paginator.HasPrev true }}
+                <a href="{{ .Paginator.Prev.URL }}" class="btn btn-primary" style="width:125px;">Previous</a>
+            {{ end }}
         </div>
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">KEEPING PETS SAFE OVER THE FESTIVE PERIOD</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">Lorem ipsum</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-                    </div>
-                </div>
-            </a>
+        <div class="col">
+            {{ if eq .Paginator.HasNext true }}
+                <a href="{{ .Paginator.Next.URL }}" class="btn btn-primary" style="width:125px;">Next</a>
+            {{ end }}
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">Valentine's for dogs</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">KEEPING PETS SAFE OVER THE FESTIVE PERIOD</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">Lorem ipsum</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">Valentine's for dogs</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">KEEPING PETS SAFE OVER THE FESTIVE PERIOD</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">Lorem ipsum</div>
-                        <div class="text-body mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros...</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-  </div>
-  <div class="mb-5 text-center">
-    <button type="button" class="btn btn-primary">Load more</button>
-  </div>
-  {{ range .Pages }}
-    <div><a href="{{ .URL | relURL }}">{{ .Title | markdownify }}</a></div>
   {{ end }}
+</div>
 {{ end }}

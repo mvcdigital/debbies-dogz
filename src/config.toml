@@ -3,3 +3,4 @@ languageCode = "en-gb"
 title = "Debbie's Dogz"
 theme = "debbies-dogz"
 relativeURLs = true
+paginate = 9
