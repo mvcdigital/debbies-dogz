@@ -13,16 +13,17 @@ collections:
           name: "home"
           file: "src/content/_index.md"
           fields:
-            - { label: Title, name: title, widget: string }
-            - { label: Image, name: image, widget: image }
-    - label: 'Blog'
-      name: 'blog'
-      folder: 'src/content/blog'
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
+    - label: "Blog"
+      name: "blog"
+      folder: "src/content/blog"
       create: true
       editor:
         preview: false
       fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Publish Date', name: 'date', widget: 'datetime', pickerUtc: true }
-        - { label: 'Summary', name: 'summary', widget: 'string' }
-        - { label: 'Body', name: 'body', widget: 'markdown' }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Publish Date", name: "date", widget: "datetime", pickerUtc: true }
+        - { label: "Summary", name: "summary", widget: "string" }
+        - { label: "Image", name: "image", widget: "image" }
+        - { label: "Body", name: "body", widget: "markdown" }
