@@ -15,6 +15,13 @@ collections:
           fields:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
+        - label: "Blog Page"
+          name: "blog"
+          file: "src/content/blog/_index.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subtitle", name: "subtitle", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
     - label: "Blog"
       name: "blog"
       folder: "src/content/blog"
