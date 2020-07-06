@@ -17,6 +17,27 @@ collections:
           fields:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
+            - { label: "Service 1", name: "service1Title", widget: "string" }
+            - { label: "Service 1 Text", name: "service1Text", widget: "string" }
+            - { label: "Service 2", name: "service2Title", widget: "string" }
+            - { label: "Service 2 Text", name: "service2Text", widget: "string" }
+            - { label: "Service 3", name: "service2Title", widget: "string" }
+            - { label: "Service 3 Text", name: "service2Text", widget: "string" }
+        - label: "Services Page"
+          name: "services"
+          file: "src/content/services/_index.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subtitle", name: "subtitle", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
+            - { label: "Day Care Price", name: "dayCarePrice", widget: "string" }
+            - { label: "Day Care Text", name: "dayCareText", widget: "text" }
+            - { label: "Walking Price", name: "walkingPrice", widget: "string" }
+            - { label: "Walking Text", name: "walkingText", widget: "text" }
+            - { label: "Boarding Price", name: "boardingPrice", widget: "string" }
+            - { label: "Boarding Text", name: "boardingText", widget: "text" }
+            - { label: "Training Price", name: "trainingPrice", widget: "string" }
+            - { label: "Training Text", name: "trainingText", widget: "text" }
         - label: "Blog Page"
           name: "blog"
           file: "src/content/blog/_index.md"
