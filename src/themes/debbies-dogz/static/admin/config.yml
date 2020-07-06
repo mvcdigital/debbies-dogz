@@ -21,8 +21,8 @@ collections:
             - { label: "Service 1 Text", name: "service1Text", widget: "string" }
             - { label: "Service 2", name: "service2Title", widget: "string" }
             - { label: "Service 2 Text", name: "service2Text", widget: "string" }
-            - { label: "Service 3", name: "service2Title", widget: "string" }
-            - { label: "Service 3 Text", name: "service2Text", widget: "string" }
+            - { label: "Service 3", name: "service3Title", widget: "string" }
+            - { label: "Service 3 Text", name: "service3Text", widget: "string" }
         - label: "Services Page"
           name: "services"
           file: "src/content/services/_index.md"
