@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <div class="card-icon mb-3" style="background-image: url(/img/icon-daycare@2x.png);"></div>
                     <h4>Day Care</h4>
-                    <p class="text-light-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="text-light-grey">{{ .Params.DayCareText }}</p>
                     <a href="/services" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                 <div class="card-body">
                     <div class="card-icon mb-3" style="background-image: url(/img/icon-walking@2x.png);"></div>
                     <h4>Walking</h4>
-                    <p class="text-light-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="text-light-grey">{{ .Params.WalkingText }}</p>
                     <a href="/services" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 <div class="card-body">
                     <div class="card-icon mb-3" style="background-image: url(/img/icon-boarding@2x.png);"></div>
                     <h4>Boarding</h4>
-                    <p class="text-light-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="text-light-grey">{{ .Params.BoardingText }}</p>
                     <a href="/services" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
@@ -87,43 +87,25 @@
     </div>
 </div>
 
-<div class="dd-blog container mb-4">
+<div class="dd-blog dd-blog-home container mb-4">
     <h2 class="text-center mb-4">Blog</h2>
     <div class="row">
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">Valentine's for dogs</div>
-                    </div>
+        {{ with .Site.GetPage "section" "blog" }}
+            {{ range first 3 .Pages }}
+                <div class="col-md-6 col-lg-4">
+                    <a href="{{ .URL | relURL }}" class="card border-0">
+                        <div class="card-img-top" style="background-image: url({{ .Params.Image }});"></div>
+                        <div class="card-body">
+                            <div class="dd-card-body-wrapper">
+                                <div class="text-light-grey">{{ dateFormat "02.01.2006" .Params.Date }}</div>
+                                <div class="dd-card-title text-primary text-uppercase font-weight-bold">{{ .Title | markdownify }}</div>
+                                <div class="text-body mt-4">{{ .Params.Summary | markdownify }}</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">KEEPING PETS SAFE OVER THE FESTIVE
-                            PERIOD</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="#" class="card border-0">
-                <div class="card-img-top" style="background-image: url(https://via.placeholder.com/150);"></div>
-                <div class="card-body">
-                    <div class="dd-card-body-wrapper">
-                        <div class="text-light-grey">14.02.2020</div>
-                        <div class="dd-card-title text-primary text-uppercase font-weight-bold">Lorem ipsum</div>
-                    </div>
-                </div>
-            </a>
-        </div>
+            {{ end }}
+        {{ end }}
     </div>
 </div>
 {{ end }}

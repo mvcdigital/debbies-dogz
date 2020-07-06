@@ -288,6 +288,17 @@ h2, .h2 {
   margin: 0 auto;
 }
 
+.dd-blog-home .row .col-md-6:last-child {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+  }
+}
+
+
+
+
 /* Lists */
 
 .dd-list {
