@@ -38,6 +38,14 @@ collections:
             - { label: "Boarding Text", name: "boardingText", widget: "text" }
             - { label: "Training Price", name: "trainingPrice", widget: "string" }
             - { label: "Training Text", name: "trainingText", widget: "text" }
+        - label: "About Page"
+          name: "about"
+          file: "src/content/about/_index.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subtitle", name: "subtitle", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
+            - { label: "Content", name: "content", widget: "markdown" }
         - label: "Blog Page"
           name: "blog"
           file: "src/content/blog/_index.md"
