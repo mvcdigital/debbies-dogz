@@ -49,6 +49,20 @@ collections:
             - { label: "Credentials Title", name: "credentialsTitle", widget: "string" }
             - { label: "Left Credentials", name: "leftCredentials", widget: "list", summary: '{{fields.text}}', field: { label: Text, name: text, widget: string } }
             - { label: "Right Credentials", name: "rightCredentials", widget: "list", summary: '{{fields.text}}', field: { label: Text, name: text, widget: string } }
+        - label: "Contact Page"
+          name: "contact"
+          file: "src/content/contact/_index.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subtitle", name: "subtitle", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
+        - label: "Contact Thank You Page"
+          name: "contactThankYou"
+          file: "src/content/contact/_index.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subtitle", name: "subtitle", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
         - label: "Blog Page"
           name: "blog"
           file: "src/content/blog/_index.md"

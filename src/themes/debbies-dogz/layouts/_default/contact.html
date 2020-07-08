@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="jumbotron dd-jumbotron jumbotron-fluid mb-4" style="background-image: url(/img/banner-about@2x.png)"></div>
+<div class="jumbotron dd-jumbotron jumbotron-fluid mb-4" style="background-image: url({{ .Params.Image }})"></div>
 <div class="container text-center mb-4">
   <h1 class="h2">{{ .Params.Title }}</h1>
   <p class="dd-subtitle text-light-grey">{{ .Params.Subtitle }}</p>
