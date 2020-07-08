@@ -6,27 +6,23 @@
   <a href="/contact" class="btn btn-primary">Contact</a>
 </div>
 <div class="container mb-5">
-  {{ .Content }}
+  {{ .Params.Content | markdownify }}
 </div>
 <div class="container p-4 mb-5 bg-light-blue">
-  <h4 class="text-center text-primary mb-4">Qualifications, Training and CPD</h4>
+  <h4 class="text-center text-primary mb-4">{{ .Params.CredentialsTitle }}</h4>
   <div class="row">
     <div class="col-md-6">
       <ul class="dd-list">
-        <li>Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
+        {{ range .Params.LeftCredentials }}
+          <li>{{ . }}</li>
+        {{ end }}
       </ul>
     </div>
     <div class="col-md-6">
       <ul class="dd-list">
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet</li>
+        {{ range .Params.RightCredentials }}
+          <li>{{ . }}</li>
+        {{ end }}
       </ul>
     </div>
   </div>
