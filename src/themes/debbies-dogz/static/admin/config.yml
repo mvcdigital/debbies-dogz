@@ -46,8 +46,9 @@ collections:
             - { label: "Subtitle", name: "subtitle", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
             - { label: "Content", name: "content", widget: "markdown" }
-            - { label: "Left Credentials", name: "leftCredentials", widget: "list", default: [""] }
-            - { label: "Right Credentials", name: "rightCredentials", widget: "list", default: [""] }
+            - { label: "Credentials Title", name: "credentialsTitle", widget: "string" }
+            - { label: "Left Credentials", name: "leftCredentials", widget: "list", summary: '{{fields.text}}', fields: { label: Text, name: text, widget: string } }
+            - { label: "Right Credentials", name: "rightCredentials", widget: "list", summary: '{{fields.text}}', fields: { label: Text, name: text, widget: string } }
         - label: "Blog Page"
           name: "blog"
           file: "src/content/blog/_index.md"
