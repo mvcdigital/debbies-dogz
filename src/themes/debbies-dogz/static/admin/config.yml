@@ -46,8 +46,8 @@ collections:
             - { label: "Subtitle", name: "subtitle", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
             - { label: "Content", name: "content", widget: "markdown" }
-            - { label: "Left Credentials", name: "leftCredentials", widget: "list" }
-            - { label: "Right Credentials", name: "rightCredentials", widget: "list" }
+            - { label: "Left Credentials", name: "leftCredentials", widget: "list", default: [""] }
+            - { label: "Right Credentials", name: "rightCredentials", widget: "list", default: [""] }
         - label: "Blog Page"
           name: "blog"
           file: "src/content/blog/_index.md"
