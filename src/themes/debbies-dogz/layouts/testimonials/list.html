@@ -5,67 +5,18 @@
   <p class="text-light-grey">{{ .Params.Subtitle }}</p>
   <a href="/contact" class="btn btn-primary">Contact</a>
 </div>
-<div class="container mb-5">
+<div class="container dd-testimonials-page mb-5">
   <div class="card-columns">
-    <div class="card dd-card-testimonial border-0 bg-paw-print">
-      <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
-      <div class="card-body text-center text-white">
-        <div class="card-icon mb-3" style="background-image: url(/img/img-btm@2x.png);"></div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec
-          urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-          viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse
-          potenti. </p>
-        <p class="font-italic">~ Lorem ipsum dolor sit amet</p>
+    {{ range .Pages }}
+      <div class="card dd-card-testimonial border-0 bg-paw-print">
+        <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
+        <div class="card-body text-center text-white">
+          <div class="card-icon mb-3" style="background-image: url({{ .Params.Image }});"></div>
+          {{ .Params.Text | markdownify }}
+          <p class="font-italic">~ {{ .Params.Name }}</p>
+        </div>
       </div>
-    </div>
-    <div class="card dd-card-testimonial border-0 bg-paw-print">
-      <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
-      <div class="card-body text-center text-white">
-        <div class="card-icon mb-3" style="background-image: url(/img/img-btm@2x.png);"></div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec
-          urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-          viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse
-          potenti. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-          viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse
-          potenti.</p>
-        <p class="font-italic">~ Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-    <div class="card dd-card-testimonial border-0 bg-paw-print">
-      <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
-      <div class="card-body text-center text-white">
-        <div class="card-icon mb-3" style="background-image: url(/img/img-btm@2x.png);"></div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec
-          urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-          viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse
-          potenti.</p>
-        <p class="font-italic">~ Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-    <div class="card dd-card-testimonial border-0 bg-paw-print">
-      <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
-      <div class="card-body text-center text-white">
-        <div class="card-icon mb-3" style="background-image: url(/img/img-btm@2x.png);"></div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec
-          urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-          viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse
-          potenti. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-          viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse
-          potenti.</p>
-        <p class="font-italic">~ Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
-    <div class="card dd-card-testimonial border-0 bg-paw-print">
-      <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
-      <div class="card-body text-center text-white">
-        <div class="card-icon mb-3" style="background-image: url(/img/img-btm@2x.png);"></div>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec
-          urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-          viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse
-          potenti.</p>
-        <p class="font-italic">~ Lorem ipsum dolor sit amet</p>
-      </div>
-    </div>
+    {{ end }}
   </div>
 </div>
 {{ end }}

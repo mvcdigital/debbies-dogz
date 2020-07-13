@@ -7581,6 +7581,13 @@ h2, .h2 {
   .dd-card-service .card-icon {
     margin-top: -80px; }
 
+.dd-testimonials-page .card-columns {
+  column-count: 1; }
+
+@media (min-width: 768px) {
+  .dd-testimonials-page .card-columns {
+    column-count: 2; } }
+
 .dd-card-testimonial {
   position: relative;
   margin-top: 20px; }
@@ -7590,6 +7597,14 @@ h2, .h2 {
     top: -75px;
     left: 10px;
     transform: rotate(180deg); }
+  .dd-card-testimonial .card-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border: 1px solid white; }
 
 /* Testimonials */
 .dd-testimonials {

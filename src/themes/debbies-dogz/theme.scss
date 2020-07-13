@@ -178,9 +178,21 @@ h2, .h2 {
   }
 }
 
+.dd-testimonials-page {
+  .card-columns {
+    column-count: 1;
+  }
+
+  @include media-breakpoint-up(md) {
+    .card-columns {
+      column-count: 2;
+    }
+  }
+}
+
 .dd-card-testimonial {
   position: relative;
-  margin-top: 20px;
+  margin-top: 20px;  
 
   .speechmarks {
     width: 50px;
@@ -188,6 +200,16 @@ h2, .h2 {
     top: -75px;
     left: 10px;
     transform: rotate(180deg);
+  }
+
+  .card-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border: 1px solid white;
   }
 }
 
