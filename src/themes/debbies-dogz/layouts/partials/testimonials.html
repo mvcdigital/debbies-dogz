@@ -1,0 +1,25 @@
+<div class="dd-testimonials">
+    <div class="container text-center">
+        <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
+        <h2 class="mb-4">What our clients say</h2>
+        <div id="testimonials" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                {{ with .Site.GetPage "section" "testimonials" }}
+                    {{range $index, $element := where .Pages ".Params.featured" true}}
+                        <li data-target="#testimonials" data-slide-to="{{ $index }}" class="{{ cond (eq $index 0) "active" "" }}"></li>
+                    {{ end }}
+                {{ end }}
+            </ol>
+            <div class="carousel-inner">
+                {{ with .Site.GetPage "section" "testimonials" }}
+                    {{range $index, $element := where .Pages ".Params.featured" true}}
+                        <div class="carousel-item {{ cond (eq $index 0) "active" "" }}">
+                            <p>"{{ .Params.Summary }}"</p>
+                            <p>~ {{ .Params.Name }}</p>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
