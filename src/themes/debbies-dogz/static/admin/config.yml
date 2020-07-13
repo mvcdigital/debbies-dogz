@@ -82,3 +82,14 @@ collections:
         - { label: "Summary", name: "summary", widget: "string" }
         - { label: "Image", name: "image", widget: "image" }
         - { label: "Body", name: "body", widget: "markdown" }
+    - label: "Testimonials"
+      name: "testimonials"
+      folder: "src/content/testimonials"
+      create: true
+      editor:
+        preview: false
+      fields:
+        - { label: "Name", name: "name", widget: "string" }
+        - { label: "Summary", name: "summary", widget: "string" }
+        - { label: "Image", name: "image", widget: "image" }
+        - { label: "Text", name: "text", widget: "text" }
