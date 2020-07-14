@@ -7630,7 +7630,8 @@ h2, .h2 {
   background-color: #3cb6ce;
   background-image: url(/img/paw-print.png);
   color: white;
-  padding: 35px 0 70px 0; }
+  padding: 35px 0 70px 0;
+  min-height: 300px; }
   .dd-testimonials .container {
     max-width: 900px;
     position: relative; }
