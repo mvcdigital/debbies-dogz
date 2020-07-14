@@ -89,7 +89,7 @@ collections:
         - { label: "Body", name: "body", widget: "markdown" }
     - label: "Testimonials"
       name: "testimonials"
-      folder: "src/content/testimonials"
+      folder: "src/content/testimonials/entries"
       create: true
       editor:
         preview: false
