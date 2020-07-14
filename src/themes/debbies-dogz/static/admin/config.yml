@@ -11,6 +11,12 @@ collections:
       editor:
         preview: false
       files:
+        - label: "Master"
+          name: "master"
+          file: "src/content/master.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Footer", name: "footer", widget: "markdown" }
         - label: "Home Page"
           name: "home"
           file: "src/content/_index.md"
@@ -46,6 +52,14 @@ collections:
             - { label: "Credentials Title", name: "credentialsTitle", widget: "string" }
             - { label: "Left Credentials", name: "leftCredentials", widget: "list", summary: '{{fields.text}}', field: { label: Text, name: text, widget: string } }
             - { label: "Right Credentials", name: "rightCredentials", widget: "list", summary: '{{fields.text}}', field: { label: Text, name: text, widget: string } }
+        - label: "Terms and Conditions Page"
+          name: "termsAndConditions"
+          file: "src/content/pages/terms-and-conditions.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subtitle", name: "subtitle", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
+            - { label: "Content", name: "content", widget: "markdown" }
         - label: "Contact Page"
           name: "contact"
           file: "src/content/contact/_index.md"
@@ -67,14 +81,6 @@ collections:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Subtitle", name: "subtitle", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
-        - label: "Terms and Conditions Page"
-          name: "termsAndConditions"
-          file: "src/content/pages/terms-and-conditions.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Subtitle", name: "subtitle", widget: "string" }
-            - { label: "Image", name: "image", widget: "image" }
-            - { label: "Content", name: "content", widget: "markdown" }
     - label: "Blog"
       name: "blog"
       folder: "src/content/blog/posts"
