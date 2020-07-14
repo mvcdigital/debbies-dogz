@@ -81,6 +81,7 @@ collections:
       create: true
       editor:
         preview: false
+      filter: { field: "cmsIgnore", value: true }
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Publish Date", name: "date", widget: "datetime", pickerUtc: true }
