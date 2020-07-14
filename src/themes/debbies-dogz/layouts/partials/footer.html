@@ -1,11 +1,9 @@
+{{ with .Site.GetPage "master" }}
 <div class="footer dd-footer">
   <div class="container">
       <div class="row">
           <div class="col-sm-8">
-              <p>Debbie’s Dogz is 4* licensed (higher standard) with Aylesbury Vale District Council for Daycare &
-                  Boarding.</p>
-              <p class="dd-footer-licence">Licence Number LC201910–41891</p>
-              <a href="/pages/terms-and-conditions">Terms and Conditions</a>
+              {{ .Params.Footer | markdownify }}
           </div>
           <div class="col-sm-4 dd-footer-social">
               <div class="font-italic mb-2">Follow us on social</div>
@@ -20,3 +18,4 @@
       <span>&copy; {{ dateFormat "2006" now }} Debbie's Dogz. All rights reserved.</span>
   </div>
 </div>
+{{ end }}
