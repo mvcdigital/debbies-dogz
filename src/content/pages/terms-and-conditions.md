@@ -20,7 +20,3 @@ content: >-
 
   <!--EndFragment-->
 ---
-
----
-title: Terms and Conditions
----
