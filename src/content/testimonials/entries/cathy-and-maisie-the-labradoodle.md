@@ -15,6 +15,6 @@ text: >-
 
   There are many times when I have taken advice from Debbie on caring for my dog – her knowledge and
 
-  understanding of dogs is second to none. She works to build a good relationship with each of the dogs in her care and they clearly respond to that. A lovely lady – I thoroughly recommend Debbie to anyone looking to trust someone with their dog.
+  understanding of dogs is second to none. She works to build a good relationship with each of the dogs in her care and they clearly respond to that. A lovely lady – I thoroughly recommend Debbie to anyone looking to trust someone with their dog."
 featured: true
 ---
