@@ -3,7 +3,7 @@ name: Cathy and Maisie the Labradoodle
 summary: Debbie has been caring for Maisie for over 3 years now – providing
   regular lunchtime walks, daycare and overnight stays – and Maisie adores her!
   Debbie always puts the needs of individual dogs first, and especially makes
-  sure they are safe and looked a􀈅er in bad weather – in hot and cold
+  sure they are safe and looked after in bad weather – in hot and cold
   temperatures.
 image: /images/uploads/20200318_090450.jpg
 text: >-
