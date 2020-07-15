@@ -1,7 +1,7 @@
 ---
 title: Terms and Conditions
 subtitle: The small print
-image: /images/uploads/banner-about-2x.png
+image: /images/uploads/terms-banner-2x.jpg
 content: >-
   <!--StartFragment-->
 
