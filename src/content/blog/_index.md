@@ -1,5 +1,5 @@
 ---
 title: Blog
 subtitle: Sharing thoughts and expertise.
-image: /images/uploads/banner-about-2x.png
+image: /images/uploads/blog-banner-2x.jpg
 ---
