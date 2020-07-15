@@ -10,6 +10,6 @@ text: >-
   sleepovers while we are away – if he could talk he would say he adores her!
 
 
-  Debbie gives great training and advice with any concerns. She has undoubtedly helped turn him into a delightful well behaved young dog. Would give a 5* rating every time for her services, kindness and consideration.
+  Debbie gives great training and advice with any concerns. She has undoubtedly helped turn him into a delightful well behaved young dog. Would give a 5* rating every time for her services, kindness and consideration."
 featured: true
 ---
