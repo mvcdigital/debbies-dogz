@@ -12,4 +12,5 @@ text: >-
 
   Debbie gives great training and advice with any concerns. She has undoubtedly helped turn him into a delightful well behaved young dog. Would give a 5* rating every time for her services, kindness and consideration."
 featured: true
+sortOrder: 2
 ---
