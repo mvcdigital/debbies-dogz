@@ -17,4 +17,5 @@ text: >-
 
   Harvey is walked 5 days a week and has also been boarded by Debbie on several occasions; I’m always totally relaxed knowing that Harvey is in very good hands. He thoroughly enjoys his time with Debbie; she’s taken the time and interest to understand his quirky spaniel ways and needs; he totally adores her — he told me so!”
 featured: true
+sortOrder: 3
 ---
