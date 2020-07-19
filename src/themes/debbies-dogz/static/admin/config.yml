@@ -100,9 +100,11 @@ collections:
       editor:
         preview: false
       identifier_field: "name"
+      sortableFields: ['sortOrder']
       fields:
         - { label: "Name", name: "name", widget: "string" }
         - { label: "Summary", name: "summary", widget: "string" }
         - { label: "Image", name: "image", widget: "image" }
         - { label: "Text", name: "text", widget: "text" }
         - { label: "Featured", name: "featured", widget: "boolean" }
+        - { label: "Sort Order", name: "sortOrder", widget: "number" }
