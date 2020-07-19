@@ -7,7 +7,7 @@
 </div>
 <div class="container dd-testimonials-page mb-5">
   <div class="card-columns">
-    {{ range .Pages }}
+    {{ range sort .Pages "Params.SortOrder" }}
       <div class="card dd-card-testimonial border-0 bg-paw-print">
         <img src="/img/speechmarks@2x.png" alt="speechmarks" class="speechmarks">
         <div class="card-body text-center text-white">
