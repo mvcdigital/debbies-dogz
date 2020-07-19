@@ -11,7 +11,7 @@ dayCareText: >-
   environment. All dogs are collected and dropped off from their homes.
 
 
-  Minimum two walks per week or one daycare.
+  *Minimum two walks per week or one daycare.*
 walkingPrice: £12.50 per dog per walk
 walkingText: >-
   We try to incorporate training as FUN into our walks with games for recall and
@@ -24,7 +24,7 @@ walkingText: >-
   dropped off from their homes.
 
 
-  Minimum two walks per week or one daycare.
+  *Minimum two walks per week or one daycare.*
 boardingPrice: contact us for pricing
 boardingText: Boarding is offered to existing walking and day care clients. Dogs
   will receive two walks per day and relax in a homefrom- home environment. Any
