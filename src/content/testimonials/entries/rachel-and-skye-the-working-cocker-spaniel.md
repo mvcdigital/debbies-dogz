@@ -14,4 +14,5 @@ text: >-
 
   Debbie has an in-depth understanding of dog behaviour from her years working as a re-homing officer for Battersea. She is definitely on the dogs’ side and uses reward based training to get the best behaviour out of her dogs. The dogs love her and critically they listen to her. She has a love of continuous learning and regularly attends workshops through the year to build her knowledge on everything from dog massage to behavioural issues. She will be your dog’s best friend.”
 featured: true
+sortOrder: 4
 ---
