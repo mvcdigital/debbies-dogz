@@ -1,6 +1,6 @@
 ---
 name: Donna and Harvey the Working Cocker Spaniel
-summary: " If like me you’re looking for someone who loves dogs and knows how to
+summary: "If like me you’re looking for someone who loves dogs and knows how to
   work with them, Debbie is most certainly the one! I can’t thank Debbie enough
   for not only providing an excellent service: reliable, trustworthy, friendly,
   but above all else loving and caring for my cocker spaniel (Harvey) just like
