@@ -52,6 +52,13 @@ collections:
             - { label: "Credentials Title", name: "credentialsTitle", widget: "string" }
             - { label: "Left Credentials", name: "leftCredentials", widget: "list", summary: '{{fields.text}}', field: { label: Text, name: text, widget: string } }
             - { label: "Right Credentials", name: "rightCredentials", widget: "list", summary: '{{fields.text}}', field: { label: Text, name: text, widget: string } }
+        - label: "Testimonials Page"
+          name: "testimonials"
+          file: "src/content/testimonials/_index.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Subtitle", name: "subtitle", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
         - label: "Terms and Conditions Page"
           name: "termsAndConditions"
           file: "src/content/pages/terms-and-conditions.md"
