@@ -17,4 +17,5 @@ text: >-
 
   Debbie has a wonderful manner with animals and chooses her walking groups carefully, to suit the needs and personalities of the dogs in her care. Alfie has also boarded for a weekend and had such a great time he didn’t want to come home! Alfie absolutely adores Debbie and, whatever the weather, he cannot wait to join her and all his doggy pals when the fun-bus turns up! I would recommend Debbie’s Dogz every day of the week.”
 featured: true
+sortOrder: 5
 ---
