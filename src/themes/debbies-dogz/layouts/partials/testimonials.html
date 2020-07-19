@@ -12,7 +12,7 @@
             </ol>
             <div class="carousel-inner">
                 {{ with .Site.GetPage "section" "testimonials" }}
-                    {{range $index, $element := where .Pages ".Params.featured" true}}
+                    {{range $index, $element := where (sort .Pages ".Params.SortOrder") ".Params.featured" true}}
                         <div class="carousel-item {{ cond (eq $index 0) "active" "" }}">
                             <p>"{{ .Params.Summary }}"</p>
                             <p>~ {{ .Params.Name }}</p>
