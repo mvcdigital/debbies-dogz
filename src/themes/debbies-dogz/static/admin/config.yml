@@ -34,13 +34,13 @@ collections:
             - { label: "Subtitle", name: "subtitle", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
             - { label: "Day Care Price", name: "dayCarePrice", widget: "string" }
-            - { label: "Day Care Text", name: "dayCareText", widget: "text" }
+            - { label: "Day Care Text", name: "dayCareText", widget: "markdown" }
             - { label: "Walking Price", name: "walkingPrice", widget: "string" }
-            - { label: "Walking Text", name: "walkingText", widget: "text" }
+            - { label: "Walking Text", name: "walkingText", widget: "markdown" }
             - { label: "Boarding Price", name: "boardingPrice", widget: "string" }
-            - { label: "Boarding Text", name: "boardingText", widget: "text" }
+            - { label: "Boarding Text", name: "boardingText", widget: "markdown" }
             - { label: "Training Price", name: "trainingPrice", widget: "string" }
-            - { label: "Training Text", name: "trainingText", widget: "text" }
+            - { label: "Training Text", name: "trainingText", widget: "markdown" }
         - label: "About Page"
           name: "about"
           file: "src/content/about/_index.md"

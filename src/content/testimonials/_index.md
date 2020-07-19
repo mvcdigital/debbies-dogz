@@ -3,8 +3,3 @@ title: Testimonials
 subtitle: Find out what our many happy clients have to say.
 image: /images/uploads/banner-about-2x.png
 ---
-
----
-title: Testimonials
-subtitle: Find out what our many happy clients have to say.
----
