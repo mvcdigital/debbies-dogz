@@ -6,8 +6,8 @@ media_folder: "src/static/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-    - label: "Site"
-      name: "site"
+    - label: "Pages"
+      name: "pages"
       editor:
         preview: false
       files:
@@ -48,7 +48,13 @@ collections:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Subtitle", name: "subtitle", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
-            - { label: "Content", name: "content", widget: "markdown" }
+            - label: "Content"
+              name: "content"
+              widget: "list"
+              fields:
+                - { label: "Text", name: "text", widget: "markdown" }
+                - { label: "Image", name: "image", widget: "image", required: false }
+                - { label: "Positon", name: "position", widget: "select", options: ["left", "right"], required: false }
             - { label: "Credentials Title", name: "credentialsTitle", widget: "string" }
             - { label: "Left Credentials", name: "leftCredentials", widget: "list", summary: '{{fields.text}}', field: { label: Text, name: text, widget: string } }
             - { label: "Right Credentials", name: "rightCredentials", widget: "list", summary: '{{fields.text}}', field: { label: Text, name: text, widget: string } }
@@ -88,22 +94,6 @@ collections:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Subtitle", name: "subtitle", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
-    - label: "Pages"
-      name: "pages"
-      folder: "src/content/pages"
-      create: true
-      editor:
-        preview: false
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Image", name: "image", widget: "image" }
-        - label: "Body"
-          name: "body"
-          widget: "list"
-          fields:
-            - { label: "Text", name: "text", widget: "markdown" }
-            - { label: "Image", name: "image", widget: "image", required: false }
-            - { label: "Positon", name: "position", widget: "select", options: ["left", "right"], required: false }
     - label: "Blog"
       name: "blog"
       folder: "src/content/blog/posts"
