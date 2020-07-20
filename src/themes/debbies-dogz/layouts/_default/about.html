@@ -6,7 +6,9 @@
   <a href="/contact" class="btn btn-primary">Contact</a>
 </div>
 <div class="container mb-5">
-  {{ .Params.Content | markdownify }}
+  {{ range .Params.Content }}
+    <div>text</div>
+  {{ end }}
 </div>
 <div class="container p-4 mb-5 bg-light-blue">
   <h4 class="text-center text-primary mb-4">{{ .Params.CredentialsTitle }}</h4>
