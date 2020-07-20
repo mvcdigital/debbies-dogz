@@ -3,7 +3,7 @@ name: Jayne and Ralphy the Mini Cavapoo
 summary: Ralphy loves his walks with Debbie and the rest of her crew – he’s
   always excited to see her sleeps like a baby on his return. Ralphy has been on
   sleepovers while we are away – if he could talk he would say he adores her!
-image: /images/uploads/73088973_2479581815696496_5207445854088069120_o.jpg
+image: /images/uploads/ralphy.jpg
 text: >-
   Ralphy loves his walks with Debbie and the rest of her crew – he’s always
   excited to see her sleeps like a baby on his return. Ralphy has been on
