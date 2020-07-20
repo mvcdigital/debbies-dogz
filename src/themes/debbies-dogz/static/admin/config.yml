@@ -97,12 +97,13 @@ collections:
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Image", name: "image", widget: "image" }
-        - { label: "Body", name: "body", widget: "list",
-            fields:
-              - { label: "Text", name: "text", widget: "markdown" }
-              - { label: "Image", name: "image", widget: "image", required: false }
-              - { label: "Positon", name: "position", widget: "select", options: ["left", "right"], required: false }
-         }
+        - label: "Body"
+          name: "body"
+          widget: "list"
+          fields:
+            - { label: "Text", name: "text", widget: "markdown" }
+            - { label: "Image", name: "image", widget: "image", required: false }
+            - { label: "Positon", name: "position", widget: "select", options: ["left", "right"], required: false }
     - label: "Blog"
       name: "blog"
       folder: "src/content/blog/posts"
