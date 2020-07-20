@@ -1,6 +1,6 @@
 ---
 title: About Debbie's Dogz
-subtitle: Learn a little about Debbie and her dogs
+subtitle: Learn a little about Debbie and her dogs.
 image: /images/uploads/about-banner-2x.jpg
 content:
   - text: >-
