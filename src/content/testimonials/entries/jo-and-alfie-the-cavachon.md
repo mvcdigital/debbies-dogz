@@ -6,7 +6,7 @@ summary: Debbie has a wonderful manner with animals and chooses her walking
   to come home! Alfie absolutely adores Debbie and, whatever the weather, he
   cannot wait to join her and all his doggy pals when the fun-bus turns up! I
   would recommend Debbie’s Dogz every day of the week...
-image: /images/uploads/61613358_2358511361136876_8530879856831889408_o.jpg
+image: /images/uploads/alfie.jpg
 text: >-
   We first met Debbie at puppy classes several years ago and she helped us
   immeasurably to train our first dog, Alfie. Since then, we’ve attended many of

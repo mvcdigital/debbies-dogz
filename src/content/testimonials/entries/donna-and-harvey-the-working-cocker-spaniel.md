@@ -5,7 +5,7 @@ summary: "If like me you’re looking for someone who loves dogs and knows how t
   for not only providing an excellent service: reliable, trustworthy, friendly,
   but above all else loving and caring for my cocker spaniel (Harvey) just like
   he was her own..."
-image: /images/uploads/20200318_090716.jpg
+image: /images/uploads/harvey.jpg
 text: >-
   There are very few people we trust to look after our fur-babies so you can
   imagine my delight when I found Debbie. If like me you’re looking for someone
