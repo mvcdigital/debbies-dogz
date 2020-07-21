@@ -273,7 +273,7 @@ h2, .h2 {
   }
 
   .carousel {
-    min-height: 250px;
+    min-height: 230px;
   }
 
   .carousel-indicators {
@@ -296,15 +296,15 @@ h2, .h2 {
     }
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     .carousel {
-      min-height: 175px;
+      min-height: 160px;
     }
   }
 
   @include media-breakpoint-up(lg) {
     .carousel {
-      min-height: 150px;
+      min-height: 140px;
     }
   }
 

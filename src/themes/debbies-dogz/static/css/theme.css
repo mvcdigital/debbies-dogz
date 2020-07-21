@@ -7645,7 +7645,7 @@ h2, .h2 {
   .dd-testimonials .speechmarks {
     display: none; }
   .dd-testimonials .carousel {
-    min-height: 250px; }
+    min-height: 230px; }
   .dd-testimonials .carousel-indicators {
     bottom: -45px; }
     .dd-testimonials .carousel-indicators li {
@@ -7660,12 +7660,12 @@ h2, .h2 {
       margin: 0 6px; }
       .dd-testimonials .carousel-indicators li.active {
         background-color: #ff6d22; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .dd-testimonials .carousel {
-      min-height: 175px; } }
+      min-height: 160px; } }
   @media (min-width: 992px) {
     .dd-testimonials .carousel {
-      min-height: 150px; } }
+      min-height: 140px; } }
   @media (min-width: 1200px) {
     .dd-testimonials .speechmarks {
       display: block;
