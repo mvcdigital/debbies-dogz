@@ -7638,13 +7638,14 @@ h2, .h2 {
   background-color: #3cb6ce;
   background-image: url(/img/paw-print.png);
   color: white;
-  padding: 35px 0 70px 0;
-  min-height: 300px; }
+  padding: 35px 0 70px 0; }
   .dd-testimonials .container {
     max-width: 900px;
     position: relative; }
   .dd-testimonials .speechmarks {
     display: none; }
+  .dd-testimonials .carousel {
+    min-height: 250px; }
   .dd-testimonials .carousel-indicators {
     bottom: -45px; }
     .dd-testimonials .carousel-indicators li {
@@ -7659,6 +7660,12 @@ h2, .h2 {
       margin: 0 6px; }
       .dd-testimonials .carousel-indicators li.active {
         background-color: #ff6d22; }
+  @media (min-width: 768px) {
+    .dd-testimonials .carousel {
+      min-height: 175px; } }
+  @media (min-width: 992px) {
+    .dd-testimonials .carousel {
+      min-height: 150px; } }
   @media (min-width: 1200px) {
     .dd-testimonials .speechmarks {
       display: block;
