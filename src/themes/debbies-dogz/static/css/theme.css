@@ -7496,33 +7496,38 @@ h2, .h2 {
   margin: auto; }
 
 /* Navbar */
-.dd-navbar .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1); }
-
-.dd-navbar .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-
-.dd-navbar .nav-item .nav-link {
-  color: #525759;
-  text-transform: uppercase; }
-  .dd-navbar .nav-item .nav-link:hover {
-    color: #3cb6ce; }
-
-.dd-navbar .nav-item.active .nav-link {
-  color: #ff6d22;
-  font-weight: bold; }
-
-@media (min-width: 992px) {
-  .dd-navbar {
-    padding-bottom: 0; }
-    .dd-navbar .nav-item .nav-link {
-      padding: 8px 0 4px 50px; }
-    .dd-navbar .nav-item.active .nav-item-bar {
-      display: block;
-      height: 8px;
-      background: #ff6d22;
-      margin-left: 50px; } }
+.dd-navbar {
+  padding: 0; }
+  .dd-navbar .navbar-brand img {
+    height: 35px; }
+  .dd-navbar .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1); }
+  .dd-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  .dd-navbar .navbar-collapse {
+    align-self: flex-end; }
+  .dd-navbar .nav-item .nav-link {
+    color: #525759;
+    text-transform: uppercase; }
+    .dd-navbar .nav-item .nav-link:hover {
+      color: #3cb6ce; }
+  .dd-navbar .nav-item.active .nav-link {
+    color: #ff6d22;
+    font-weight: bold; }
+  @media (min-width: 576px) {
+    .dd-navbar .navbar-brand img {
+      height: 45px; } }
+  @media (min-width: 992px) {
+    .dd-navbar {
+      padding-bottom: 0; }
+      .dd-navbar .nav-item .nav-link {
+        padding: 8px 0 4px 50px; }
+      .dd-navbar .nav-item.active .nav-item-bar {
+        display: block;
+        height: 8px;
+        background: #ff6d22;
+        margin-left: 50px; } }
 
 /* Jumbotron */
 .dd-jumbotron {
