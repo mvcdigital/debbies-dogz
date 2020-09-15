@@ -27,7 +27,7 @@ walkingText: >-
   *Minimum two walks per week or one daycare.*
 boardingPrice: contact us for pricing
 boardingText: Boarding is offered to existing walking and day care clients. Dogs
-  will receive two walks per day and relax in a homefrom- home environment. Any
+  will receive two walks per day and relax in a home-from-home environment. Any
   dog spending over 7 nights boarding will also receive a professional bath and
   brush with Becky at Woof and Go Dog Grooming prior to being returned home. A
   trial night or weekend will be required at least one month prior to boarding
