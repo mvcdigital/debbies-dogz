@@ -3,7 +3,7 @@ title: Services
 subtitle: From stimulating enrichment walks to all-day care, holiday boarding or
   one-to-one training, Debbie's Dogz can help.
 image: /images/uploads/services-banner-2x.jpg
-dayCarePrice: £25.00 per dog per day
+dayCarePrice: £30.00 per dog per day / £20.00 per dog per half day
 dayCareText: >-
   All dogs will receive a morning and afternoon walk (according to clients'
   requirements) and a lunchtime snack (Kong or other enrichment toy as
@@ -25,14 +25,14 @@ walkingText: >-
 
 
   *Minimum two walks per week or one daycare.*
-boardingPrice: contact us for pricing
+boardingPrice: £40.00 per dog per night
 boardingText: Boarding is offered to existing walking and day care clients. Dogs
   will receive two walks per day and relax in a home-from-home environment. Any
   dog spending over 7 nights boarding will also receive a professional bath and
   brush with Becky at Woof and Go Dog Grooming prior to being returned home. A
   trial night or weekend will be required at least one month prior to boarding
   dates.
-trainingPrice: contact us for pricing
+trainingPrice: Contact us for pricing
 trainingText: With an extensive background in dog training, Debbie's Dogz also
   offers 121 training consultations, pre-puppy advice and 121 puppy/dog
   training. All training is rewards-based, using positive reinforcement to
