@@ -29,14 +29,12 @@ boardingPrice: £40.00 per dog per night
 boardingText: Boarding is offered to existing walking and day care clients. Dogs
   will receive two walks per day and relax in a home-from-home environment. Any
   dog spending over 7 nights boarding will also receive a professional bath and
-  brush with Becky at Woof and Go Dog Grooming prior to being returned home. A
-  trial night or weekend will be required at least one month prior to boarding
-  dates.
+  brush prior to being returned home. A trial night or weekend will be required
+  at least one month prior to boarding dates.
 trainingPrice: Contact us for pricing
-trainingText: With an extensive background in dog training, Debbie's Dogz also
+trainingText: As a qualified and experienced dog trainer, Debbie's Dogz also
   offers 121 training consultations, pre-puppy advice and 121 puppy/dog
-  training. All training is rewards-based, using positive reinforcement to
-  encourage good behaviour.
+  training. All training is reward-based and force-free.
 ---
 
 ---
