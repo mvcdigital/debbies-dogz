@@ -3,7 +3,7 @@ title: To walk or not to walk - by Emma Judson
 date: 2020-03-28T19:44:01.711Z
 summary: Insightful article by Emma Judson on why you should NOT FEEL GUILTY for
   the one walk a day
-image: /images/uploads/banner1-2x.png
+image: /images/uploads/bc49eacd-aef2-43af-bf04-2d400b033057.jpg
 ---
 To Walk, or Not To Walk – It’s Not Even A Question Is It?
 
