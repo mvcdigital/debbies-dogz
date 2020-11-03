@@ -1,7 +1,7 @@
 ---
 title: About Debbie's Dogz
 subtitle: Learn a little about Debbie and her dogs.
-image: /images/uploads/about-header-2x.jpg
+image: /images/uploads/about-header2-2x.jpg
 content:
   - text: >-
       I have always had a deep love for dogs, growing up with a number of rescue
