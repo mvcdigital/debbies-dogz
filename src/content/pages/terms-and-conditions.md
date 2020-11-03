@@ -1,7 +1,7 @@
 ---
 title: Terms and Conditions
 subtitle: The small print
-image: /images/uploads/terms-banner-2x.jpg
+image: /images/uploads/terms-header-2x.jpg
 content: >-
   No entire males or bitches.
 
