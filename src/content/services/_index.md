@@ -2,7 +2,7 @@
 title: Services
 subtitle: From stimulating enrichment walks to all-day care, holiday boarding or
   one-to-one training, Debbie's Dogz can help.
-image: /images/uploads/services-banner-2x.jpg
+image: /images/uploads/services-header-2x.jpg
 dayCarePrice: £30.00 per dog per day / £20.00 per dog per half day
 dayCareText: >-
   All dogs will receive a morning and afternoon walk (according to clients'
