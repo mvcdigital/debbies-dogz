@@ -7532,7 +7532,6 @@ h2, .h2 {
 #content {
   min-height: 600px; }
 
-/* Jumbotron */
 .dd-jumbotron {
   background-color: white;
   background-repeat: no-repeat;
@@ -7554,7 +7553,7 @@ h2, .h2 {
     .dd-jumbotron > div .container {
       background-color: rgba(0, 0, 0, 0.4);
       margin: 0 auto;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       text-align: center;
       color: white; }
       .dd-jumbotron > div .container h1 {

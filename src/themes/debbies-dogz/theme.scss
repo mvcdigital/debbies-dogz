@@ -113,74 +113,6 @@ h2, .h2 {
   min-height: 600px;
 }
 
-/* Jumbotron */
-
-// .dd-jumbotron {
-//   background-color: white;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   padding:0;
-//   min-height: 150px;
-//   position: relative;
-
-//   @include media-breakpoint-up(sm) {
-//     min-height: 180px;
-//   }
-
-//   @include media-breakpoint-up(lg) {
-//     min-height: 216px;
-//   }
-
-//   @include media-breakpoint-up(xl) {
-//     min-height: 300px;
-//   }
-// }
-
-// .dd-jumbotron-home {
-//   display: flex;
-//   align-items: center;
-//   min-height: 250px;
-  
-//   .container {
-//     padding: 28px 0;
-//     background-color: rgba(82,87,89,0.4);
-
-//     h1 {
-//       font-size: 26px;
-//       max-width: 490px;
-//       margin: 0 auto;
-//     }
-//   }
-
-//   @include media-breakpoint-up(sm) {
-//     min-height: 300px;
-
-//     .container {
-//       border-radius: 0.5rem;
-//     }
-//   }
-
-//   @include media-breakpoint-up(lg) {
-//     min-height: 336px;
-
-//     .container {
-//       border-radius: 0.5rem;
-//       padding: 28px 90px;
-//       max-width: 900px;
-
-//       h1 {
-//         font-size: 32px;
-//         max-width: 600px;
-//       }
-//     }
-//   }
-
-//   @include media-breakpoint-up(xl) {
-//     min-height: 465px;
-//   }
-// }
-
 .dd-jumbotron {
   background-color: white;
   background-repeat: no-repeat;
@@ -204,7 +136,7 @@ h2, .h2 {
     .container {
       background-color: rgba(0,0,0,0.4);
       margin: 0 auto;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       text-align: center;
       color: white;
 
