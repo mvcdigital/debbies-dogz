@@ -79,7 +79,7 @@ h2, .h2 {
     }
 
     &.active .nav-link {
-      color: theme-color("primary");
+      color: theme-color("secondary");
       font-weight: bold;
     }
   }
@@ -102,7 +102,7 @@ h2, .h2 {
       &.active .nav-item-bar {
         display: block;
         height: 8px;
-        background: theme-color("primary");
+        background: theme-color("secondary");
         margin-left: 50px;
       }
     }    
@@ -115,70 +115,149 @@ h2, .h2 {
 
 /* Jumbotron */
 
+// .dd-jumbotron {
+//   background-color: white;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   padding:0;
+//   min-height: 150px;
+//   position: relative;
+
+//   @include media-breakpoint-up(sm) {
+//     min-height: 180px;
+//   }
+
+//   @include media-breakpoint-up(lg) {
+//     min-height: 216px;
+//   }
+
+//   @include media-breakpoint-up(xl) {
+//     min-height: 300px;
+//   }
+// }
+
+// .dd-jumbotron-home {
+//   display: flex;
+//   align-items: center;
+//   min-height: 250px;
+  
+//   .container {
+//     padding: 28px 0;
+//     background-color: rgba(82,87,89,0.4);
+
+//     h1 {
+//       font-size: 26px;
+//       max-width: 490px;
+//       margin: 0 auto;
+//     }
+//   }
+
+//   @include media-breakpoint-up(sm) {
+//     min-height: 300px;
+
+//     .container {
+//       border-radius: 0.5rem;
+//     }
+//   }
+
+//   @include media-breakpoint-up(lg) {
+//     min-height: 336px;
+
+//     .container {
+//       border-radius: 0.5rem;
+//       padding: 28px 90px;
+//       max-width: 900px;
+
+//       h1 {
+//         font-size: 32px;
+//         max-width: 600px;
+//       }
+//     }
+//   }
+
+//   @include media-breakpoint-up(xl) {
+//     min-height: 465px;
+//   }
+// }
+
 .dd-jumbotron {
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding:0;
-  min-height: 150px;
-
-  @include media-breakpoint-up(sm) {
-    min-height: 180px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    min-height: 216px;
-  }
-
-  @include media-breakpoint-up(xl) {
-    min-height: 300px;
-  }
-}
-
-.dd-jumbotron-home {
+  min-height: 300px;
+  position: relative;
   display: flex;
   align-items: center;
-  min-height: 250px;
-  
-  .container {
-    padding: 28px 0;
-    background-color: rgba(82,87,89,0.4);
 
-    h1 {
-      font-size: 26px;
-      max-width: 490px;
+  > div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    .container {
+      background-color: rgba(0,0,0,0.4);
       margin: 0 auto;
+      padding: 2rem 0;
+      text-align: center;
+      color: white;
+
+        h1 {
+          font-size: 26px;
+          max-width: 490px;
+          margin: 0 auto;
+        }
+
+        p {
+          font-size: 22px;
+        }
     }
   }
 
   @include media-breakpoint-up(sm) {
-    min-height: 300px;
+    padding-bottom: 26%;
 
-    .container {
-      border-radius: 0.5rem;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    min-height: 336px;
-
-    .container {
-      border-radius: 0.5rem;
-      padding: 28px 90px;
-      max-width: 900px;
-
-      h1 {
-        font-size: 32px;
-        max-width: 600px;
+    > div {  
+      .container {
+        padding: 2rem 4rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        max-width: 860px;
+  
+          h1 {
+            font-size: 26px;
+            max-width: 490px;
+            margin: 0 auto;
+          }
       }
     }
   }
 
-  @include media-breakpoint-up(xl) {
-    min-height: 465px;
+  @include media-breakpoint-up(lg) {
+    > div {  
+      .container {  
+          h1 {
+            font-size: 38px;
+            max-width: 600px;
+          }
+      }
+    }
   }
 }
+
+.dd-jumbotron-home {
+  @include media-breakpoint-up(sm) {
+    padding-bottom: 35%;
+  }
+}
+
+
 
 /* Buttons */
 
@@ -210,6 +289,10 @@ h2, .h2 {
     background-position: center top;
     background-size: contain;
     height: 120px;
+  }
+
+  h4 {
+    color: theme-color("primary");
   }
 }
 

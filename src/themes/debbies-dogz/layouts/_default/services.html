@@ -1,9 +1,12 @@
 {{ define "main" }}
-<div class="jumbotron dd-jumbotron jumbotron-fluid mb-4" style="background-image: url({{ .Params.Image }})"></div>
-<div class="container text-center mb-4 dd-subtitle">
-  <h1 class="h2">{{ .Title }}</h1>
-  <p class="text-light-grey">{{ .Params.Subtitle }}</p>
-  <a href="/contact" class="btn btn-primary">Contact</a>
+<div class="jumbotron dd-jumbotron jumbotron-fluid mb-4" style="background-image: url({{ .Params.Image }})">
+  <div>
+    <div class="container">
+      <h1 class="h2">{{ .Title }}</h1>
+      <p>{{ .Params.Subtitle }}</p>
+      <a href="/contact" class="btn btn-lg btn-primary">Contact</a>
+    </div>
+  </div>
 </div>
 <div class="container mb-5">
   <div class="card-deck mb-4">

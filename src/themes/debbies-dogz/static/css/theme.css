@@ -7513,7 +7513,7 @@ h2, .h2 {
     .dd-navbar .nav-item .nav-link:hover {
       color: #3cb6ce; }
   .dd-navbar .nav-item.active .nav-link {
-    color: #ff6d22;
+    color: #3cb6ce;
     font-weight: bold; }
   @media (min-width: 576px) {
     .dd-navbar .navbar-brand img {
@@ -7526,7 +7526,7 @@ h2, .h2 {
       .dd-navbar .nav-item.active .nav-item-bar {
         display: block;
         height: 8px;
-        background: #ff6d22;
+        background: #3cb6ce;
         margin-left: 50px; } }
 
 #content {
@@ -7539,46 +7539,50 @@ h2, .h2 {
   background-position: center;
   background-size: cover;
   padding: 0;
-  min-height: 150px; }
-  @media (min-width: 576px) {
-    .dd-jumbotron {
-      min-height: 180px; } }
-  @media (min-width: 992px) {
-    .dd-jumbotron {
-      min-height: 216px; } }
-  @media (min-width: 1200px) {
-    .dd-jumbotron {
-      min-height: 300px; } }
-
-.dd-jumbotron-home {
+  min-height: 300px;
+  position: relative;
   display: flex;
-  align-items: center;
-  min-height: 250px; }
-  .dd-jumbotron-home .container {
-    padding: 28px 0;
-    background-color: rgba(82, 87, 89, 0.4); }
-    .dd-jumbotron-home .container h1 {
-      font-size: 26px;
-      max-width: 490px;
-      margin: 0 auto; }
+  align-items: center; }
+  .dd-jumbotron > div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .dd-jumbotron > div .container {
+      background-color: rgba(0, 0, 0, 0.4);
+      margin: 0 auto;
+      padding: 2rem 0;
+      text-align: center;
+      color: white; }
+      .dd-jumbotron > div .container h1 {
+        font-size: 26px;
+        max-width: 490px;
+        margin: 0 auto; }
+      .dd-jumbotron > div .container p {
+        font-size: 22px; }
   @media (min-width: 576px) {
-    .dd-jumbotron-home {
-      min-height: 300px; }
-      .dd-jumbotron-home .container {
-        border-radius: 0.5rem; } }
-  @media (min-width: 992px) {
-    .dd-jumbotron-home {
-      min-height: 336px; }
-      .dd-jumbotron-home .container {
+    .dd-jumbotron {
+      padding-bottom: 26%; }
+      .dd-jumbotron > div .container {
+        padding: 2rem 4rem;
         border-radius: 0.5rem;
-        padding: 28px 90px;
-        max-width: 900px; }
-        .dd-jumbotron-home .container h1 {
-          font-size: 32px;
-          max-width: 600px; } }
-  @media (min-width: 1200px) {
-    .dd-jumbotron-home {
-      min-height: 465px; } }
+        text-align: center;
+        max-width: 860px; }
+        .dd-jumbotron > div .container h1 {
+          font-size: 26px;
+          max-width: 490px;
+          margin: 0 auto; } }
+  @media (min-width: 992px) {
+    .dd-jumbotron > div .container h1 {
+      font-size: 38px;
+      max-width: 600px; } }
+
+@media (min-width: 576px) {
+  .dd-jumbotron-home {
+    padding-bottom: 35%; } }
 
 /* Buttons */
 .btn {
@@ -7602,6 +7606,9 @@ h2, .h2 {
   background-position: center top;
   background-size: contain;
   height: 120px; }
+
+.card h4 {
+  color: #ff6d22; }
 
 .dd-card-service {
   margin-top: 80px; }
