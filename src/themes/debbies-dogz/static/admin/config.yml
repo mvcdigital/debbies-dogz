@@ -131,6 +131,6 @@ collections:
       sortableFields: ['sortOrder']
       fields:
         - { label: "Name", name: "name", widget: "string" }
-        - { label: "Url", name: "url", widget: "string", required: false }
+        - { label: "Website Url", name: "websiteUrl", widget: "string", required: false }
         - { label: "Image", name: "image", widget: "image" }
         - { label: "Sort Order", name: "sortOrder", widget: "number" }

@@ -1,0 +1,30 @@
+<div class="dd-suppliers">
+    <div class="container text-center">
+        <h2 class="mb-4">Debbie's Dogz Recommends</h2>
+        <div id="suppliers" class="carousel slide d-md-none" data-ride="carousel">
+            <ol class="carousel-indicators">
+                {{ with .Site.GetPage "section" "suppliers" }}
+                    {{range $index, $element := .Pages}}
+                        <li data-target="#testimonials" data-slide-to="{{ $index }}" class="{{ cond (eq $index 0) "active" "" }}"></li>
+                    {{ end }}
+                {{ end }}
+            </ol>
+            <div class="carousel-inner">
+                {{ with .Site.GetPage "section" "suppliers" }}
+                    {{range $index, $element := (sort .Pages ".Params.SortOrder")}}
+                        <div class="carousel-item {{ cond (eq $index 0) "active" "" }}">
+                            <img src="{{.Params.Image}}" class="w_100" />
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        <div class="logos d-none d-md-block">
+            {{ with .Site.GetPage "section" "suppliers" }}
+                {{range $index, $element := (sort .Pages ".Params.SortOrder")}}
+                    <img src="{{.Params.Image}}" />
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>

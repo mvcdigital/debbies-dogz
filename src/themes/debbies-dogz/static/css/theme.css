@@ -7652,20 +7652,6 @@ h2, .h2 {
     display: none; }
   .dd-testimonials .carousel {
     min-height: 230px; }
-  .dd-testimonials .carousel-indicators {
-    bottom: -45px; }
-    .dd-testimonials .carousel-indicators li {
-      width: 10px;
-      height: 10px;
-      background-clip: unset;
-      transition: none;
-      border: 1px solid white;
-      background: white;
-      opacity: 1;
-      border-radius: 10px;
-      margin: 0 6px; }
-      .dd-testimonials .carousel-indicators li.active {
-        background-color: #ff6d22; }
   @media (min-width: 576px) {
     .dd-testimonials .carousel {
       min-height: 160px; } }
@@ -7679,6 +7665,21 @@ h2, .h2 {
       position: absolute;
       top: -80px;
       right: -80px; } }
+
+.carousel-indicators {
+  bottom: -45px; }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-clip: unset;
+    transition: none;
+    border: 1px solid white;
+    background: white;
+    opacity: 1;
+    border-radius: 10px;
+    margin: 0 6px; }
+    .carousel-indicators li.active {
+      background-color: #ff6d22; }
 
 /* Blog */
 .dd-blog .card {
@@ -7718,6 +7719,20 @@ h2, .h2 {
   @media (min-width: 992px) {
     .dd-blog-home .row .col-md-6:last-child {
       display: block; } }
+
+.dd-suppliers {
+  background-color: #dce4e8;
+  padding: 30px 0;
+  position: relative; }
+  .dd-suppliers .carousel {
+    min-height: 220px; }
+  .dd-suppliers .carousel-indicators {
+    bottom: -10px; }
+  .dd-suppliers .logos img {
+    width: calc(20% - 20px);
+    margin-left: 20px; }
+  .dd-suppliers .logos img:first-child {
+    margin-left: 0px; }
 
 /* Lists */
 .dd-list {
