@@ -7728,10 +7728,9 @@ h2, .h2 {
     min-height: 220px; }
   .dd-suppliers .carousel-indicators {
     bottom: -10px; }
-  .dd-suppliers .logos img {
-    width: calc(20% - 20px);
-    margin-left: 20px; }
-  .dd-suppliers .logos img:first-child {
+  .dd-suppliers .logos a img {
+    margin-left: 50px; }
+  .dd-suppliers .logos a:first-child img {
     margin-left: 0px; }
 
 /* Lists */

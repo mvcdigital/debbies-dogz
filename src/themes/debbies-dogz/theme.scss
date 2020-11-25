@@ -404,12 +404,11 @@ h2, .h2 {
     bottom: -10px;
   }
 
-  .logos img {
-    width: calc(20% - 20px);
-    margin-left: 20px;
+  .logos a img {
+    margin-left: 50px;
   }
 
-  .logos img:first-child {
+  .logos a:first-child img {
     margin-left: 0px;
   }
 }
