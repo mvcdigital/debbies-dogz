@@ -2,9 +2,7 @@
 title: Easy to make Meaty Muttloaf and Tiny Balls (!) Training Treats
 date: 2020-04-11T15:14:21.872Z
 summary: So with all the sweet cakes & biscuits I've been baking I thought we'd
-  go for a savoury "doggy dish of the day" - really easy to make - Meaty
-  Muttloaf and Tiny Balls (!) Training treats - again store-cupboard ingredients
-  used and substituted cottage cheese or cheddar (not quite as low fat maybe!)
+  go for a savoury "doggy dish of the day"...
 image: /images/uploads/92997720_2643984689256207_2440423404252168192_o.jpg
 ---
 DebbiesDogz Saturday Morning Kitchen .....
