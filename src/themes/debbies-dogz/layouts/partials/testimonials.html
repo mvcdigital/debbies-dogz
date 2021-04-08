@@ -15,7 +15,7 @@
                     {{range $index, $element := where (sort .Pages ".Params.SortOrder") ".Params.featured" true}}
                         <div class="carousel-item {{ cond (eq $index 0) "active" "" }}">
                             <p>"{{ .Params.Summary }}"</p>
-                            <p>~ {{ .Params.Name }}</p>
+                            <p class="font-italic">~ {{ .Params.Name }}</p>
                         </div>
                     {{ end }}
                 {{ end }}

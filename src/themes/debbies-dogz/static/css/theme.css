@@ -7474,6 +7474,10 @@ a.text-light-blue:hover, a.text-light-blue:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+@media (min-width: 992px) {
+  body {
+    font-size: 18px; } }
+
 .bg-light-blue {
   background-color: #ecf8fa; }
 
@@ -7482,10 +7486,7 @@ a.text-light-blue:hover, a.text-light-blue:focus {
   background-image: url(/img/paw-print.png); }
 
 /* Typography */
-h1 {
-  font-weight: 600; }
-
-h2, .h2 {
+h1, h2, .h2 {
   font-family: 'Aleo', serif; }
 
 .text-light-grey {
@@ -7505,8 +7506,6 @@ h2, .h2 {
     border-color: rgba(0, 0, 0, 0.1); }
   .dd-navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-  .dd-navbar .navbar-collapse {
-    align-self: flex-end; }
   .dd-navbar .nav-item .nav-link {
     color: #525759;
     text-transform: uppercase; }
@@ -7520,12 +7519,13 @@ h2, .h2 {
       height: 45px; } }
   @media (min-width: 992px) {
     .dd-navbar {
-      padding-bottom: 0; }
+      padding: 8px 0; }
       .dd-navbar .nav-item .nav-link {
-        padding: 8px 0 4px 50px; }
+        padding: 8px 0 0 50px;
+        font-size: 18px; }
       .dd-navbar .nav-item.active .nav-item-bar {
         display: block;
-        height: 8px;
+        height: 2px;
         background: #3cb6ce;
         margin-left: 50px; } }
 
@@ -7549,9 +7549,9 @@ h2, .h2 {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); }
     .dd-jumbotron > div .container {
-      background-color: rgba(0, 0, 0, 0.4);
       margin: 0 auto;
       padding: 2rem 1rem;
       text-align: center;
@@ -7559,7 +7559,8 @@ h2, .h2 {
       .dd-jumbotron > div .container h1 {
         font-size: 26px;
         max-width: 490px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        text-shadow: 0 0 9px black; }
       .dd-jumbotron > div .container p {
         font-size: 22px; }
   @media (min-width: 576px) {
@@ -7701,7 +7702,8 @@ h2, .h2 {
 @media (min-width: 992px) {
   .dd-blog .card .dd-card-body-wrapper {
     margin-top: -50px;
-    padding: 20px; } }
+    padding: 20px;
+    font-size: 16px; } }
 
 .dd-blog-article {
   max-width: 800px; }
