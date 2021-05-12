@@ -1,7 +1,7 @@
 $enable-transitions: true;
 $grid-gutter-width: 40px !default;
 
-$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-sans-serif: 'Poppins', sans-serif;
 $headings-font-weight: 400;
 
 $body-bg: #fefefe;
@@ -407,7 +407,7 @@ h1, h2, .h2 {
   }
 
   .logos a img {
-    margin-left: 50px;
+    margin-left: 40px;
   }
 
   .logos a:first-child img {
@@ -447,6 +447,7 @@ h1, h2, .h2 {
   color: white;
   padding: 30px 0;
   border-top: 1px solid $body-bg;
+  font-size: 14px;
 
   .dd-footer-social {
     padding-top: 10px;
@@ -478,4 +479,5 @@ h1, h2, .h2 {
   padding: 10px 0;
   text-align: center;
   border-top: 1px solid $body-bg;
+  font-size: 12px;
 }
