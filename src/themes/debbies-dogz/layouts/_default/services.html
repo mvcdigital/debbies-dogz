@@ -8,6 +8,7 @@
     </div>
   </div>
 </div>
+<div id="day-care"></div>
 <div class="container pt-md-2 pb-md-2 mb-5">
   <div class="card-deck mb-4">
     <div class="card dd-card-service border-0 bg-light-blue">
@@ -17,6 +18,7 @@
         <p class="text-secondary">{{ .Params.DayCarePrice }}</p>
         {{ .Params.DayCareText | markdownify }}
       </div>
+      <div id="walking"></div>
     </div>
     <div class="card dd-card-service border-0 bg-light-blue">
       <div class="card-body text-center">
@@ -25,6 +27,7 @@
         <p class="text-secondary">{{ .Params.WalkingPrice }}</p>
         {{ .Params.WalkingText | markdownify }}
       </div>
+      <div id="boarding"></div>
     </div>
   </div>
   <div class="card-deck">
@@ -36,7 +39,7 @@
         {{ .Params.BoardingText | markdownify }}
       </div>
     </div>
-    <div class="card dd-card-service border-0 bg-light-blue">
+    <div id="training" class="card dd-card-service border-0 bg-light-blue">
       <div class="card-body text-center">
         <div class="card-icon mb-3" style="background-image: url(/img/icon-training-white@2x.png);"></div>
         <h5 class="text-primary mb-0">One-to-one Training</h5>

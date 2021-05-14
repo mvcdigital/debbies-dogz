@@ -7476,7 +7476,7 @@ a.text-light-blue:hover, a.text-light-blue:focus {
 
 @media (min-width: 992px) {
   body {
-    font-size: 18px; } }
+    font-size: 16px; } }
 
 .bg-light-blue {
   background-color: #ecf8fa; }
